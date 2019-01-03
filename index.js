@@ -82,6 +82,12 @@ exports.neuron  = {
                 help: 'Clear Time Log',
                 parameters: [{nick: 'pass', optional: true}],
                 handler: vcb.cleartimes
+            },
+            makenote: {
+                nick: 'makenote',
+                help: 'Make note Saved under Today.',
+                parameters: [{nick: 'note', optional: false}],
+                handler: vcb.makenote
             }
 		}
 	}
